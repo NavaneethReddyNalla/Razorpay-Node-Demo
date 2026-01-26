@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razorpay Test</title>
+  </head>
+  <body>
+    <h1>Razorpay Demo</h1>
+    <form>
+      <label for="amount">Enter Amount</label>
+      <input id="amount" type="number" min="1" />
+
+      <button type="button" onclick="payNow()">Pay</button>
+    </form>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./handlePayment.js"></script>
+  </body>
+</html>
