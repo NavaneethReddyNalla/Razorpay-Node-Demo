@@ -30,7 +30,7 @@ router.post("/verify-payment", async (req, res) => {
   const { razorpay_payment_id, razorpay_order_id, razorpay_signature } =
     req.body;
 
-  // Check how to properly validate payment using signature
+  // Check how to properly validate payment using signatures
   if (
     !validatePaymentVerification(
       { order_id: currentOrderId, payment_id: razorpay_payment_id },
