@@ -38,7 +38,7 @@ router.post("/verify-payment", async (req, res) => {
       process.env.RZRP_KEY_SECRET,
     )
   ) {
-    return res.status(400).send("Payment verification failed");
+    return res.status(400).send("Payment verification failed raaaa!");
   }
 
   // Firebase and Firestore logic to store everything
